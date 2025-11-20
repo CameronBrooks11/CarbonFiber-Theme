@@ -1,0 +1,123 @@
+/* ------------------------------------------------------------------------------------
+   FiberPath – Carbon Fiber Theme 
+   ------------------------------------------------------------------------------------ */
+
+/* === Color Tokens === */
+:root {
+  /* Brand identity accents */
+  --primary: #12a89a;
+  --primary-muted: #75e3d8;
+
+  --accent: #d8b534;
+  --accent-soft: #f2e3ad;
+
+  /* Neutral greyscale system */
+  --bg: #0e0e0f;
+  --bg-elevated: #1a1a1c;
+  --border: #2a2a2d;
+  --border-subtle: #111112;
+
+  --text: #e3e3e6;
+  --text-muted: #7e8087;
+  --text-on-primary: #0d332f;
+
+  --danger: #d57373;
+  --warning: #d8b534;
+}
+
+/* ------------------------------------------------------------------------------------
+   Carbon Fiber Background Pattern
+   ------------------------------------------------------------------------------------ */
+
+body {
+  background: linear-gradient(27deg, #141414 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #141414 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #1c1c1c 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #1c1c1c 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #191919 10px, transparent 10px),
+    linear-gradient(
+      #1e1e1e 25%,
+      #181818 25%,
+      #181818 50%,
+      transparent 50%,
+      transparent 75%,
+      #222222 75%,
+      #222222
+    );
+  background-color: #111;
+  background-size: 20px 20px;
+
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+}
+
+/* ------------------------------------------------------------------------------------
+   Card
+   ------------------------------------------------------------------------------------ */
+
+.card {
+  background: var(--bg-elevated);
+  padding: 1.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  max-width: 720px;
+  margin: 3.5rem auto;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 22px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  color: var(--primary);
+  margin-top: 0;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------------
+   Buttons
+   ------------------------------------------------------------------------------------ */
+
+button {
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.primary {
+  background: var(--primary);
+  color: var(--text-on-primary);
+}
+
+button.primary:hover {
+  background: #14afa0;
+}
+
+button.accent {
+  background: var(--accent);
+  color: #0f0f0f;
+}
+
+button.accent:hover {
+  background: #d3b63b;
+}
+
+/* ------------------------------------------------------------------------------------
+   Links
+   ------------------------------------------------------------------------------------ */
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
